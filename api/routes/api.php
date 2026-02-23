@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\DeviceController;
 use App\Http\Controllers\LocationController;
+use App\Http\Controllers\StatsController;
 use Illuminate\Support\Facades\Route;
 
 // Public endpoint - no authentication required
@@ -12,4 +13,5 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/devices', [DeviceController::class, 'index']);
     Route::get('/devices/{device_id}', [DeviceController::class, 'show']);
     Route::get('/devices/{device_id}/history', [DeviceController::class, 'history']);
+    Route::get('/stats', [StatsController::class, 'index']);
 });
