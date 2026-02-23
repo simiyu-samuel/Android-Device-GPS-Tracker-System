@@ -16,21 +16,21 @@ This implementation plan breaks down the POS Device GPS Tracker System into thre
   - Configure CORS middleware for dashboard domain
   - _Requirements: 12.1, 12.2, 12.3, 12.4_
 
-- [ ] 2. Create database schema and models
-  - [ ] 2.1 Create devices table migration and model
+- [x] 2. Create database schema and models
+  - [x] 2.1 Create devices table migration and model
     - Migration with columns: id, device_id (unique), name, model, brand, android_version, last_seen, battery_level, timestamps
     - Add indexes on device_id and last_seen
     - Device model with fillable fields, casts, and status computed attribute
     - _Requirements: 11.1, 11.4, 7.3, 7.4_
   
-  - [ ] 2.2 Create location_pings table migration and model
+  - [x] 2.2 Create location_pings table migration and model
     - Migration with columns: id, device_id, latitude, longitude, accuracy, speed, battery_level, timestamp, created_at
     - Add indexes on device_id, timestamp, and composite (device_id, timestamp)
     - Foreign key constraint on device_id with cascade delete
     - LocationPing model with fillable fields and casts
     - _Requirements: 11.2, 11.4, 11.5_
   
-  - [ ] 2.3 Create users table migration and seed admin user
+  - [x] 2.3 Create users table migration and seed admin user
     - Migration with columns: id, name, email (unique), password, timestamps
     - User model with HasApiTokens trait for Sanctum
     - Seeder to create initial admin user
