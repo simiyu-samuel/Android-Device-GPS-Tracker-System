@@ -154,8 +154,8 @@ This implementation plan breaks down the POS Device GPS Tracker System into thre
     - **Property 29: Protected Endpoint Authentication Enforcement**
     - **Validates: Requirements 10.5**
 
-- [ ] 8. Add database constraint tests and API routes
-  - [ ] 8.1 Define API routes in routes/api.php
+- [x] 8. Add database constraint tests and API routes
+  - [x] 8.1 Define API routes in routes/api.php
     - POST /api/location (public)
     - POST /api/auth/login (public)
     - POST /api/auth/logout (protected)
@@ -182,7 +182,7 @@ This implementation plan breaks down the POS Device GPS Tracker System into thre
     - **Property 33: Preflight Request Handling**
     - **Validates: Requirements 12.2**
 
-- [ ] 9. Checkpoint - Ensure all API tests pass
+- [x] 9. Checkpoint - Ensure all API tests pass
   - Run all unit and property tests for the Laravel backend
   - Verify database migrations run successfully
   - Test API endpoints manually with Postman or similar tool
