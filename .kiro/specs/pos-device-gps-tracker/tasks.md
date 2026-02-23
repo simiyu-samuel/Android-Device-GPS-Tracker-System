@@ -36,8 +36,8 @@ This implementation plan breaks down the POS Device GPS Tracker System into thre
     - Seeder to create initial admin user
     - _Requirements: 11.3_
 
-- [ ] 3. Implement location ping reception endpoint
-  - [ ] 3.1 Create LocationController with store method
+- [-] 3. Implement location ping reception endpoint
+  - [x] 3.1 Create LocationController with store method
     - Validate incoming location ping payload (device_id, latitude, longitude, timestamp, etc.)
     - Create or update device record based on device_id
     - Store location ping in location_pings table
