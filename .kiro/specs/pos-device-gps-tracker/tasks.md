@@ -63,8 +63,8 @@ This implementation plan breaks down the POS Device GPS Tracker System into thre
     - **Validates: Requirements 6.4**
 
 
-- [ ] 4. Implement device management endpoints
-  - [ ] 4.1 Create DeviceController with index and show methods
+- [-] 4. Implement device management endpoints
+  - [x] 4.1 Create DeviceController with index and show methods
     - index(): Return list of all devices with computed status, latest location
     - show($id): Return single device details or 404 if not found
     - Apply Sanctum authentication middleware
